@@ -1,0 +1,69 @@
+1. Before doing any other investigation, list two or three questions that this infographic
+and explanation of methodology raise in your mind.
+- How did they decide what food to include?
+- Can a high level of search interest really indicate that people like the food after breakup?
+- Can some searches have an impact on the results even though they are not related to comfort food?
+
+2. Where can you find Google Trends search data? Provide the URL.
+- https://trends.google.com/trends/
+
+3. The article concluded that “milkshakes take the crown as the ultimate breakup food,
+topping the list in six states.” Pull up Google Trends data on Milkshake (beverage) and
+change the date range to February 1, 2024 through February 28, 2025.
+a) What is the highest peak recorded in the line chart for “Interest over time”?
+- 100 on Feb 2 to 8 and Feb 23 to Mar 1.
+b) What is the lowest dip recorded?
+- 61 on Dec 22 to 28.
+
+4. At the top next to the box for “Milkshake,” there is a plus sign to add another search
+term. Click the plus sign to add a search for Hamburger (Food).
+a) What is the highest peak recorded for searches using Hamburger? What is the
+lowest dip?
+- Highest is 100 and lowest is 49.
+
+b) What happened to the line for Milkshake? What do the high and low look like now?
+- The line shifted when I added the hamburger. The peak was lower than before, and the highs and lows appeared different. Google trends appears to rescale the graph according to the phrases under comparison.
+
+5. Why did the line for Milkshake change? Hint: Click on the icon next to “Interest
+over time” for more information about how trend results are displayed.
+- Because google trends uses a relative scale, the line was changed. The Milkshake line no longer looked the same as it did when it was search alone since the graph changed the values to compare the two terms after the hamburger was added.
+
+6. Add a third term to your search, this time for Breakup (Topic).
+a) Do you see any patterns that suggest a relationship between searches for Breakup
+and Hamburger?
+- Breakup had the lowest trend line and hamburger had the highest. It was evident that hamburger had far greater search interest than breakup or milkshake.
+
+b) How about between Breakup and Milkshake?
+- Milkshake and breakup does seem to have a close link but the lines do not fluctuate together, and milkshake remains higher throughout the graph.
+
+7. What does all of this suggest about the reliability of the conclusions reached in the
+article?
+- There is no strong correlation from this chart alone.
+
+8. At the upper right of Google Trends, click on the link for “Back to Classic Explore.”
+Notice that this view includes a section for “Compared breakdown by subregion.”
+a) What was the top state by interest for Milkshake?
+- Alabama
+
+b) What was the top state by interest for Hamburger?
+- South Dakota
+
+9. Use the download icon to download a csv file with these search trend results. Save it
+to your DataAnalytics/week-01 folder as GTrends_milkshake_hamburger_2024.csv
+- Done
+
+10. OPTIONAL: Spend a little more time exploring Google Trends results for other
+“breakup foods” listed in the article. Some more food for thought:
+a) What are the differences you notice between searching for between searching for a
+term as a “search term” versus as a categorical term? What thoughts does this
+raise in your mind about working with Google Trends data?
+∗ For example, compare “Milkshake (beverage)” to “Milkshake (search term)”,
+then compare “Hamburger (Food)” to “Burger (search term)”
+- When I searched using milkshake (search term) it did not provide any result. Using the broader category term produced more results because it puts relevant searches together.
+
+a) Try comparing “Hamburger (Food)” to some search terms oriented toward pop
+culture or current events. For instance, you might compare to “football” or
+“olympics.” What do you notice? What do you think other patterns in search
+behavior might represent?
+- Search terms can be influenced by external factors like events and sports seasons.
+
