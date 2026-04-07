@@ -26,7 +26,7 @@ b) What happened to the line for Milkshake? What do the high and low look like n
 
 5. Why did the line for Milkshake change? Hint: Click on the icon next to “Interest
 over time” for more information about how trend results are displayed.
-- Because google trends uses a relative scale, the line was changed. The Milkshake line no longer looked the same as it did when it was search alone since the graph changed the values to compare the two terms after the hamburger was added.
+- The Milkshake line no longer looked the same as it did when it was search alone since the graph changed the values to compare the two terms after the hamburger was added.
 
 6. Add a third term to your search, this time for Breakup (Topic).
 a) Do you see any patterns that suggest a relationship between searches for Breakup
@@ -38,7 +38,7 @@ b) How about between Breakup and Milkshake?
 
 7. What does all of this suggest about the reliability of the conclusions reached in the
 article?
-- There is no strong correlation from this chart alone.
+- I agree with the article but there since there are limited information, there is also a possibility that the interest in Milkshake is not strictly related to breakups.
 
 8. At the upper right of Google Trends, click on the link for “Back to Classic Explore.”
 Notice that this view includes a section for “Compared breakdown by subregion.”
