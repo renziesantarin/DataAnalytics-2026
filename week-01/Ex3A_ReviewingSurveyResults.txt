@@ -2,7 +2,7 @@
 - Many students are making an effort to improve their morning routine and get ready before class starts. A lot of the responses indicate that preparation and time management are crucial.
 
 2. Is the default summary or visualization helpful? How could it be improved?
-- It is useful in terms of seeing the total responses clearly. Visualization is not included so I would suggest that adding it can improve the comparison to some of the questions.
+- It is useful in terms of seeing the total responses clearly because it is laid out nicely in an excel worksheet. Visualization is not included so I would suggest that adding it can improve the comparison to some of the questions, for example the questions that are answered yes or no, a pie chart can be added to quickly visualize how many students have second monitors or have an external mouse or keyboard.
 
 3. For questions with an “Other” option, where can you find the actual text of those
 responses? Do you notice anything that might be tricky about analyzing these?
@@ -30,4 +30,4 @@ in how you approach teaching this class?
 9. Again, pretend you are the instructor. Do you think it was helpful or not helpful to
 make this survey anonymous? Why or why not? (If you can see both pros and cons,
 you may include both.)
-- Making the survey anonymous can be helpful because other students might feel inclined to answer truthfully, however, because it is anonymous it becomes more difficult to follow up certain students that might need help.
+- Making the survey anonymous can be helpful because other students might feel inclined to answer truthfully, however, because it is anonymous it becomes more difficult to follow up with certain students that might need help.
