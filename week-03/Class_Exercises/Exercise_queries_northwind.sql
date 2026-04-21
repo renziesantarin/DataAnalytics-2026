@@ -128,4 +128,67 @@ SELECT CompanyName
 FROM customers
 WHERE CompanyName LIKE 'A%';
 
--- #22
+/* Retrieves OrderID, CustomerID, OrderDate for 
+all orders with a shipped date 1997-01-01. */
+
+SELECT OrderID, CustomerID, OrderDate
+FROM orders
+WHERE OrderDate = '1997-01-01';
+
+-- Retrieve all orders placed in June 1997 using YEAR() and MONTH () Functions.
+
+SELECT OrderID, CustomerID, OrderDate
+FROM orders
+WHERE YEAR(OrderDate) = 1997
+AND MONTH(OrderDate) = 6;
+
+-- Retrieves all product names and price in descending order.
+
+SELECT ProductName, UnitPrice
+FROM products
+ORDER BY UnitPrice DESC;
+
+/* Retrieves company names alphabetically by country then name.
+Customers are first grouped by country alphabetically. 
+Within each country, they are further sorted by company name */
+
+SELECT CompanyName, Country
+FROM customers
+ORDER BY Country ASC, CompanyName ASC;
+
+-- Retrieve the top 5 most expensive products.
+
+SELECT ProductName, UnitPrice
+FROM products
+ORDER BY UnitPrice DESC
+LIMIT 5;
+
+-- Retrieve products and prices for rows 6 through 10 and skip the first 5 rows.
+
+SELECT ProductName, UnitPrice
+FROM products
+ORDER BY UnitPrice DESC
+LIMIT 5, 5;
+
+-- Retrieve unique countries.
+
+SELECT DISTINCT Country
+FROM customers;
+
+/* Return each unique pairing of country and city - if 2 customers 
+share the same city, the city appears only once. */
+
+SELECT DISTINCT Country, City
+FROM customers
+ORDER BY Country, City;
+
+-- Return Full Name from first and last.
+
+SELECT CONCAT(FirstName, ' ', LastName) AS 'Full Name', Title
+FROM employees;
+
+-- Return product with original price and a 10% discount.
+
+SELECT ProductName, UnitPrice AS 'Original Price',
+UnitPrice * 0.9 AS '10% Discount Price'
+FROM products;
