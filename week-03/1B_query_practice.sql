@@ -1,4 +1,4 @@
-USE northwind;
+USE northwind
 
 -- Exercise 1.B
 
@@ -6,14 +6,14 @@ USE northwind;
 unit price of every product that Northwind sells. */
 
 SELECT ProductID, ProductName, UnitPrice
-FROM products;
+FROM products; -- It shows 77 products.
 
 /* 2. Write a query to identify the products where
 the unit price is $7.50 or less. */
 
 SELECT ProductID, ProductName, UnitPrice
 FROM products
-WHERE UnitPrice <= 7.50;
+WHERE UnitPrice <= 7.50; -- There are 5 products that are <= 7.50.
 
 /* 3. What are the products that we carry where we have 
 no units on hand, but 1 or more units are on backorder? */
@@ -22,41 +22,59 @@ SELECT ProductID, ProductName, UnitsInStock, UnitsOnOrder
 FROM products
 WHERE UnitsInStock = 0 AND UnitsOnOrder >= 1; -- Answer is Gordonzola Telino.
 
-/* 4. Examine the products table. How does it identify the type (category) of each item
-sold? Where can you find a list of all categories? Write a set of queries to answer these
-questions, ending with a query that creates a list of all the seafood items we carry. */
+/* 4a. Examine the products table. How does it identify the 
+type (category) of each item sold? */ 
 
 SELECT *
-FROM products;
+FROM products; -- Each product has a CategoryID.
+
+-- 4b. Where can you find a list of all categories?
+
+SELECT *
+FROM categories; -- There are 8 categories.
+
+/* 4c. Write a set of queries to answer these questions, ending with a
+query that creates a list of all the seafood items we carry. */
 
 SELECT CategoryID, CategoryName
 FROM categories
-WHERE CategoryName = 'Seafood';
-
--- OR
+WHERE CategoryName = 'Seafood'; -- CategoryID for seafood is 8.
 
 SELECT ProductID, ProductName, CategoryID
 FROM products
-WHERE CategoryID = 8;
+WHERE CategoryID = 8; -- There are 12 items.
 
-/* 5. How do you know what supplier each product comes from? Where 
-can you find info on suppliers? Write a set of queries to find the specific 
-identifier for "Tokyo Traders" and then find all products from that supplier */
+-- 5a. How do you know what supplier each product comes from?
+
+SELECT *
+FROM products; -- The product table uses SupplierID.
+
+-- 5b. Where can you find info on suppliers?
+
+SELECT *
+FROM suppliers; -- The supplier table shows 29 suppliers.
+
+/* 5c. Write a set of queries to find the specific identifier for 
+"Tokyo Traders" and then find all products from that supplier */
 
 SELECT SupplierID, CompanyName
 FROM suppliers
-WHERE CompanyName = 'Tokyo Traders';
+WHERE CompanyName = 'Tokyo Traders'; -- SupplierID is 4.
 
 SELECT ProductID, ProductName, SupplierID
 FROM products
-WHERE supplierID = 4;
+WHERE supplierID = 4; -- They are supplying 3 products.
 
-/* 6. How many employees work at northwind? What employees have "manager"
-somewhere in their job title? Write queries to answer each question. */
+-- 6a. How many employees work at northwind?
 
-SELECT EmployeeID, LastName, FirstName
-FROM employees; -- Answer is 9.
+SELECT *
+FROM employees; -- There are 9 employees.
+
+/* What employees have "manager" somewhere in their
+job title? Write queries to answer each question. */
 
 SELECT EmployeeID, FirstName, LastName, Title
 FROM employees
-WHERE Title LIKE '%manager%'; -- Answer is Steven Buchanan.alter
+WHERE Title LIKE '%manager%'; -- Steven Buchanan is the sales manager.
+
+
