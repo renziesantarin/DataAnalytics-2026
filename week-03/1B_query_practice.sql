@@ -1,4 +1,4 @@
-USE northwind
+USE northwind;
 
 -- Exercise 1.B
 
@@ -20,7 +20,7 @@ no units on hand, but 1 or more units are on backorder? */
 
 SELECT ProductID, ProductName, UnitsInStock, UnitsOnOrder
 FROM products
-WHERE UnitsInStock = 0 AND UnitsOnOrder >= 1; -- Answer is Gordonzola Telino.
+WHERE UnitsInStock = 0 AND UnitsOnOrder >= 1; -- Answer is Gorgonzola Telino.
 
 /* 4a. Examine the products table. How does it identify the 
 type (category) of each item sold? */ 
