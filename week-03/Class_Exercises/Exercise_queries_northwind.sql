@@ -192,3 +192,36 @@ FROM employees;
 SELECT ProductName, UnitPrice AS 'Original Price',
 UnitPrice * 0.9 AS '10% Discount Price'
 FROM products;
+
+-- Example 1
+
+SELECT o.OrderID, c.CompanyName AS 'Customer', o.OrderDate
+FROM orders o
+JOIN Customers c ON o.CustomerID = c.CustomerID
+ORDER BY o.OrderDate DESC
+LIMIT 5;
+
+-- Example 2
+
+SELECT OrderID, CompanyName, OrderDate
+FROM orders
+JOIN customers USING (CustomerID)
+ORDER BY OrderDate
+LIMIT 5;
+
+-- Example 3
+
+SELECT ProductName, CategoryName, UnitPrice
+FROM Products
+JOIN Categories USING (CategoryID)
+ORDER BY CategoryName, ProductName
+LIMIT 6;
+
+-- Example 5
+
+SELECT c.CompanyName, COUNT(o.OrderID) AS 'Order Count'
+FROM Customers c
+LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
+GROUP BY c.CompanyName
+ORDER BY 'Order Count' ASC
+LIMIT 5;
