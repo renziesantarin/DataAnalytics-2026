@@ -42,7 +42,7 @@ INNER JOIN shippers s
 WHERE o.ShipCountry = 'Germany'
 ORDER BY Shipper, o.ShipName;
 
-/* Start from the same query as above (#4), but omit OrderID and add logic to group by
+/* 5. Start from the same query as above (#4), but omit OrderID and add logic to group by
 ship name, with a count of how many orders were shipped for that ship name. */
 
 SELECT o.ShipName, s.CompanyName AS Shipper, COUNT(*) AS OrderCount

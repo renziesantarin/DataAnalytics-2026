@@ -23,7 +23,6 @@ SELECT ProductID, ProductName, UnitPrice, UnitsInStock
 FROM products
 WHERE UnitsInStock >= 100
 ORDER BY UnitPrice DESC, ProductName ASC;
--- Since there isn't a matching price, the second rule did not execute.
 
 /* 4. Write a query against the orders table that displays the total number of distinct
 customers who have placed orders, based on customer ID. Use an alias to label the
