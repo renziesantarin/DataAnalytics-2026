@@ -70,7 +70,7 @@ WHERE supplierID = 4; -- They are supplying 3 products.
 SELECT *
 FROM employees; -- There are 9 employees.
 
-/* What employees have "manager" somewhere in their
+/* 6b. What employees have "manager" somewhere in their
 job title? Write queries to answer each question. */
 
 SELECT EmployeeID, FirstName, LastName, Title
