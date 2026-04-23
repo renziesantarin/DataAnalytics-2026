@@ -225,3 +225,16 @@ LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
 GROUP BY c.CompanyName
 ORDER BY 'Order Count' ASC
 LIMIT 5;
+
+-- Example 1
+
+SELECT COUNT(orderID) AS TotalOrders
+FROM orders;
+
+-- Example 2
+
+SELECT ROUND(SUM(Freight), 2) AS 'Total Freight',
+ROUND(AVG(Freight), 2) AS 'Average Freight',
+ROUND(MIN(Freight), 2) AS 'Minimum Freight',
+ROUND(MAX(Freight), 2) AS 'Minimum Freight'
+FROM orders;
